@@ -1,4 +1,5 @@
 # gh2
-Direct edit from GH
-New change here on GitHub!
-Before using GIT PULL
+
+GitHub Repo 2 - for testing
+OK, testing feching/pulling from another branch - gh-test-branch
+
