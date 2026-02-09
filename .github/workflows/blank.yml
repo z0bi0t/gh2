@@ -1,10 +1,8 @@
-name: Hello World
-on: workflow_dispatch
+name: Build the World on Push
+on: push
 jobs:
-  hello:
+  build:
     runs-on: macos-latest
     steps:
-      - name: Hello step
-        run: |
-          echo "Well"
-          echo "Come"
+      - name: Building steps
+        run: echo "Building"
