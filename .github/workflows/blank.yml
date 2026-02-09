@@ -2,7 +2,7 @@ name: Build the World on Push
 on: push
 jobs:
   build:
-    runs-on: macos-latest
+    runs-on: ubuntu-latest
     steps:
       - name: Building steps
         run: echo "Building"
