@@ -5,4 +5,6 @@ jobs:
     runs-on: macos-latest
     steps:
       - name: Hello step
-        run: echo "Well come"
+        run: |
+          echo "Well"
+          echo "Come"
