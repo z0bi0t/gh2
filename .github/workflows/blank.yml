@@ -1,0 +1,8 @@
+name: Hello World
+on: workflow_dispatch
+jobs:
+  hello:
+    runs-on: macos-latest
+    steps:
+      - name: Hello step
+        run: echo "Well come"
