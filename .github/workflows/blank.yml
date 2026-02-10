@@ -1,18 +1,10 @@
-name: Hello World
-on: 
-  push:
-    branches:
-      - main
-      - develop
-      - 'release/**'
-  pull_request:
-    types:
-      - opened
-    branches:
-      - main
+name: GH Action DEMO
+on: push
 jobs:
-  build:
+  action-demo:
     runs-on: ubuntu-latest
     steps:
-      - name: Build Step
-        run: echo "A demo build for ${{ secrets.DOCKER_PASSWORD }}"
+      - name: Checkout the code
+        uses: actions/checkout@v4
+      - name: Print index.html file
+        run: cat index.html
