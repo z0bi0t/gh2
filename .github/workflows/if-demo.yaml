@@ -1,6 +1,6 @@
 name: IF
 on: 
-  push
+  push:
     branches:
       - main
       - develop
