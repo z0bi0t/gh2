@@ -1,5 +1,8 @@
 name: Build And Deploy Demo
 on:
+  push:
+    branches:
+      - main
   pull_request:
     types:
       - opened
@@ -7,7 +10,14 @@ on:
 jobs:
   build:
     runs-on: ubuntu-slim
+    if: github.event_name == 'pull_request'
     steps:
       - name: build step
         run: echo "Building the app"
+  deploy:
+    runs-on: ubuntu-slim
+    if: github.event_name == 'push' && github.ref_name == 'name'
+    steps:
+      - name: deploy step
+        run: echo "Deploying the app"
       
