@@ -8,3 +8,5 @@ jobs:
         run: |
           echo "This WF is triggered by ${{ github.actor }}"
           echo "The repo name is ${{ github.repository }}"
+      - name: All github contxt variables
+        run: "toJson(github)"
