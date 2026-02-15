@@ -16,7 +16,7 @@ jobs:
         run: echo "Building the app"
   deploy:
     runs-on: ubuntu-slim
-    if: github.event_name == 'push' && github.ref_name == 'name'
+    if: github.event_name == 'push' && github.ref_name == 'main'
     steps:
       - name: deploy step
         run: echo "Deploying the app"
