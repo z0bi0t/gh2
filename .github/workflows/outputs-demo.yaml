@@ -3,7 +3,7 @@ on: push
 jobs:
   build:
     outputs:
-      version: ${{ steps.step1.outputs.veersion }}
+      version: ${{ steps.build1.outputs.veersion }}
     runs-on: ubuntu-slim
     steps:
       - name: Build
