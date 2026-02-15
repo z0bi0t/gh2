@@ -14,4 +14,4 @@ jobs:
     runs-on: ubuntu-slim
     steps:
       - name: Deploy
-        run: echo "{{ needs.build.outputs.version }}"
+        run: echo "${{ needs.build.outputs.version }}"
