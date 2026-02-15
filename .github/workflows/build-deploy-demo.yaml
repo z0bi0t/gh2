@@ -1,0 +1,13 @@
+name: Build And Deploy Demo
+on:
+  pull_request:
+    types:
+      - opened
+      - synchronize
+jobs:
+  build:
+    runs-on: ubuntu-slim
+    steps:
+      - name: build step
+        run: echo "Building the app"
+      
