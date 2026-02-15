@@ -10,3 +10,5 @@ jobs:
           echo "The repo name is ${{ github.repository }}"
       - name: All github contxt variables
         run: echo "${{ toJson(github) }}"
+      - name: All env vars
+        run: printenv
